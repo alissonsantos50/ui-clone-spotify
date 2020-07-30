@@ -1,12 +1,31 @@
-import React from 'react';
+import React from "react";
 
-import { FiHome, FiRadio } from 'react-icons/fi';
-
-// import { Container } from './styles';
+import {
+  Container,
+  NavButton,
+  HomeIcon,
+  BrowseIcon,
+  RadioIcon,
+} from "./styles";
 
 function NavMenu() {
   return (
+    <Container>
+      <NavButton className="selected">
+        <HomeIcon />
+        <span>Home</span>
+      </NavButton>
 
+      <NavButton>
+        <BrowseIcon />
+        <span>Browse</span>
+      </NavButton>
+
+      <NavButton>
+        <RadioIcon />
+        <span>Radio</span>
+      </NavButton>
+    </Container>
   );
 }
 

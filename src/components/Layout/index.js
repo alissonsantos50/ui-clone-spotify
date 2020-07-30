@@ -2,16 +2,20 @@ import React from "react";
 
 import Sidebar from "../Sidebar";
 import Main from "../Main";
+import FooterBar from "../FooterBar";
 import FriendActivity from "../FriendActivity";
-import { Container } from "./styles";
+import { ContainerWrapper, Container } from "./styles";
 
 function Layout() {
   return (
-    <Container>
-      <Sidebar />
-      <Main />
-      <FriendActivity />
-    </Container>
+    <ContainerWrapper>
+      <Container>
+        <Sidebar />
+        <Main />
+        <FriendActivity isHidden />
+      </Container>
+      <FooterBar />
+    </ContainerWrapper>
   );
 }
 

@@ -1,11 +1,19 @@
 import React from "react";
 
-import { Container } from "./styles";
+import NavMenu from "../NavMenu";
+import NavList from "../NavList";
+
+import { Container, NewPlaylist, AddIcon } from "./styles";
 
 function Sidebar() {
   return (
     <Container>
-      <h1>sidebar</h1>
+      <NavMenu />
+      <NavList />
+      <NewPlaylist>
+        <AddIcon />
+        <h1>New Playlist</h1>
+      </NewPlaylist>
     </Container>
   );
 }
